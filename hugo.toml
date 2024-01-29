@@ -2,4 +2,6 @@ baseURL = "https://anderthehorizon.online"
 languageCode = "en-us"
 title = "Ander_The_Horizon"
 copyright = "Copyright © 2024 Andrés Ospina. "
-theme = "FixIt"
+theme = "mainroad"
+author = "Andrés Ospina"
+
