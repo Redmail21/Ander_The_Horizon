@@ -1,6 +1,6 @@
 ---
 title: 'Lista de cosas para ser el mejor.'
-subtitle:
+subtitle: 
 date: 2024-01-28T16:44:11-06:00
 slug: 690903d
 draft: false
@@ -22,10 +22,12 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRss: false
 hiddenFromRelated: false
-summary:
+summary: 
+lead: De mis reflexiones y aconteceres diarios. Mejor escritos para no olvidarlos.
+truncate: 50
 resources:
-  - name: featured-image
-    src: featured-image.jpg
+  - name: "lol" 
+    src: assets/img/ygo_robot.jpg
   - name: featured-image-preview
     src: featured-image-preview.jpg
 toc: true

@@ -3,5 +3,6 @@ languageCode = "en-us"
 title = "Ander_The_Horizon"
 copyright = "Copyright © 2024 Andrés Ospina. "
 theme = "mainroad"
-author = "Andrés Ospina"
 
+[params]
+    author = "Andrés Ospina"
