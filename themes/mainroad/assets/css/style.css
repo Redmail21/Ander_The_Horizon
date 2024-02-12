@@ -69,6 +69,9 @@ body {
 	width: 100%;
 	max-width: 1080px;
 	margin: 0 auto;
+	
+	
+	
 }
 
 .container--outer {
@@ -390,15 +393,20 @@ select {
 
 /* Header */
 .header {
-	background: #fff;
+	background: #000000;
+	
+	
 }
 
 .logo {
-	padding: 25px;
+	padding: 25px;	
+	
+	
 }
 
 .logo__link {
 	display: inline-block;
+	
 }
 
 .logo__item {
@@ -428,11 +436,12 @@ select {
 }
 
 .logo__title {
+
+	color: white;
 	font-size: 36px;
 	font-size: 3rem;
 	font-weight: 700;
-	line-height: 1;
-	color: #000;
+	line-height: 1;	
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;        
 	padding:  0 0 0 1rem;
 }

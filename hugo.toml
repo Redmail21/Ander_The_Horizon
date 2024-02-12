@@ -6,3 +6,9 @@ theme = "mainroad"
 
 [params]
     author = "Andrés Ospina"
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = "right"
+
+  widgets = ["search", "recent", "categories", "taglist"]
