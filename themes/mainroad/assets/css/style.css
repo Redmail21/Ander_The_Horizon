@@ -1,3 +1,8 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap')
+</style>
+
 {{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
 
 {{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
@@ -396,6 +401,7 @@ select {
 	background: #000000;
 	
 	
+	
 }
 
 .logo {
@@ -437,12 +443,16 @@ select {
 
 .logo__title {
 
-	color: white;
+	color:white;
 	font-size: 36px;
 	font-size: 3rem;
 	font-weight: 700;
 	line-height: 1;	
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;        
+	/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;         */
+	font-family: "Cairo Play", sans-serif;
+	font-weight: 500;
+	font-stretch: narrower;
+	
 	padding:  0 0 0 1rem;
 }
 
@@ -597,6 +607,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 /* Posts/Pages */
 .post__header,
 .main__header {
+	
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
@@ -646,7 +657,9 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__title {
-	margin: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 0 0 5px 0;
+	
 }
 
 .post__meta {
@@ -879,6 +892,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	font-weight: 700;
 }
 
+
+
 /* List content */
 .list__item {
 	padding-bottom: 20px;
@@ -895,7 +910,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .list__title {
 	font-size: 20px;
-	font-size: 1.25rem;
+	font-size: 1.55rem;
 }
 
 .list__meta {
@@ -1205,6 +1220,32 @@ textarea {
 	text-decoration: underline;
 }
 
+/** Custom */
+.date{
+		text-shadow: 2px 2px 8px #0554ff;
+
+	}
+
+.last_mod{
+	margin-top: 3px;
+	text-align: right;
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 2px 8px #FF0000;
+	font-size: smaller;
+	}
+
+	.author{
+		font-style: italic;		
+		text-shadow: 3px 3px 8px #f78400;
+		
+	}
+.subheader{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 1475px) {
 	.container--outer {
@@ -1255,6 +1296,7 @@ textarea {
 
 	.logo {
 		text-align: center;
+
 	}
 
 	.logo__link {
@@ -1262,6 +1304,7 @@ textarea {
 	}
 
 	.logo__title {
+		
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
@@ -1324,11 +1367,13 @@ textarea {
 	}
 
 	.list__title {
+		
 		font-size: 16px;
 		font-size: 1rem;
 	}
 
 	.list__lead {
+		
 		font-size: 14px;
 		font-size: .875rem;
 	}
@@ -1338,4 +1383,6 @@ textarea {
 		font-size: 11px;
 		font-size: .6875rem;
 	}
+
+	
 }

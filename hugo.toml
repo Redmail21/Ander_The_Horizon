@@ -1,14 +1,24 @@
 baseURL = "https://anderthehorizon.online"
-languageCode = "en-us"
+languageCode = "es-419"
 title = "Ander_The_Horizon"
-copyright = "Copyright © 2024 Andrés Ospina. "
+enableEmoji = true
 theme = "mainroad"
+enabledGitInfo = true
 
-[params]
+[Params]
     author = "Andrés Ospina"
+    copyright = 'Andrés Ospina.'
+    
+
 [Params.sidebar]
   home = "right"
   list = "right"
   single = "right"
 
   widgets = ["search", "recent", "categories", "taglist"]
+
+[lastmod_msg]
+  other = "Last modified on:"
+
+[frontmatter]
+   lastmod = [":git", ":fileModTime", "lastmod", ":defalut"]

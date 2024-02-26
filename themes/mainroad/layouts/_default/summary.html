@@ -6,7 +6,15 @@
 			{{ .Title }}
 			</a>
 		</h2>
-		{{.Date.Format "January 2, 2006"}}
+
+		<div class="subheader">
+			
+			<div class="date" > {{.Date.Format "January 2, 2006"}} </div>
+			 <span class="author">By: {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}</span>		
+
+		</div>
+
+		
 		{{- with .Params.lead }}
 			<p class="list__lead post__lead">{{ . }}</p>		
 		{{- end }}
@@ -16,7 +24,7 @@
 		{{- end }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		{{ .Summary }}
+		{{ .Summary }} 
 	</div>
 
 	{{- if .Site.Params.readmore }}
@@ -26,5 +34,9 @@
 		</div>
 		{{- end }}
 	{{- end }}
+
+	<div class="last_mod">
+		{{ T "lastmod_msg" | markdownify }} Last Modified: {{ .Lastmod.Format "Monday, January 2, 2006" }}
+	 </div>
 
 </article>

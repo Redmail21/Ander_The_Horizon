@@ -4,20 +4,20 @@ subtitle:
 date: 2024-01-28T16:44:11-06:00
 slug: 690903d
 draft: false
-author:
-  name:
-  link:
-  email:
-  avatar:
+# author:
+#   name:
+#   link:
+#   email:
+#   avatar:
 description:
 keywords:
 license:
 comment: false
 weight: 0
 tags:
-  - Philosophy
+  - Filosofía
 categories:
-  - MyThoughts
+  - Mis?Pensamientos
 hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRss: false

@@ -4,9 +4,24 @@
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>						
 			
-			{{with .Params.date}}			
-				<p class="post__date">{{ .Format "January 2, 2006" }}</p>
-			{{end}}
+			<div class="subheader"> 
+
+
+				{{with .Params.date}}			
+					<p class="post__date">  {{ .Format "January 2, 2006" }}</p>
+						
+					
+					{{end}}
+	
+					<span class="author"> By: {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}</span>
+						
+					<div class="last_mod">
+						{{ T "lastmod_msg" | markdownify }} Last Modified: {{ .Lastmod.Format "Monday, January 2, 2006" }}
+					 </div>
+			</div>
+			
+
+			
 			
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>
